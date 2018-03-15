@@ -1,6 +1,6 @@
 {% set name = "Willow" %}
-{% set version = "1.0" %}
-{% set sha256 = "dba768a03591973254b5a0242d11ebae00f1cb971e6f3a2ee592ff8e230b6090" %}
+{% set version = "1.1" %}
+{% set sha256 = "818ee11803c90a0a6d49c94b0453d6266be1ef83ae00de72731c45fae4d3e78c" %}
 
 package:
   name: {{ name|lower }}
