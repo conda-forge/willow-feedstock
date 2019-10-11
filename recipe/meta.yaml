@@ -1,6 +1,6 @@
 {% set name = "Willow" %}
-{% set version = "1.1" %}
-{% set sha256 = "818ee11803c90a0a6d49c94b0453d6266be1ef83ae00de72731c45fae4d3e78c" %}
+{% set version = "1.2" %}
+{% set sha256 = "c4aa64db2c2a34341c4998e7d063def8384f652e9e0654eda923fd756c9f1240" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
