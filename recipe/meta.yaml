@@ -1,6 +1,6 @@
 {% set name = "Willow" %}
-{% set version = "1.3" %}
-{% set sha256 = "4f84c46f65b6a1982e63dbd4d94c6bae705ff21f839164c31e105c3e251bec37" %}
+{% set version = "1.4" %}
+{% set sha256 = "cde01e054c510284ac3459d6b531e1653a58e33a735706ac27905a94fe81742c" %}
 
 package:
   name: {{ name|lower }}
@@ -32,8 +32,8 @@ about:
   home: https://github.com/wagtail/Willow
   license: BSD-3-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A unified interface to Python image libraries'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A unified interface to Python image libraries
   description: |
     Willow is a simple image library that combines the APIs of Pillow, 
     Wand and OpenCV. It converts the image between the libraries when 
