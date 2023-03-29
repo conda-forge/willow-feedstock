@@ -1,11 +1,11 @@
-About willow
-============
+About willow-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/willow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/wagtail/Willow
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/willow-feedstock/blob/main/LICENSE.txt)
 
 Summary: A unified interface to Python image libraries
 
