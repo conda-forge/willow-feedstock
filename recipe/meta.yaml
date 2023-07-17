@@ -1,4 +1,4 @@
-{% set name = "Willow" %}
+{% set name = "willow" %}
 {% set version = "1.6" %}
 {% set sha256 = "b3aa13f0dc259b6ac76d52778756157a2abcfb59eb08db6472701d78e21dcf33" %}
 
