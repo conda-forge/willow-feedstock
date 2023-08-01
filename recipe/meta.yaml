@@ -1,6 +1,6 @@
-{% set name = "willow" %}
-{% set version = "1.6" %}
-{% set sha256 = "b3aa13f0dc259b6ac76d52778756157a2abcfb59eb08db6472701d78e21dcf33" %}
+{% set name = "Willow" %}
+{% set version = "1.5.1" %}
+{% set sha256 = "b7a4909110133fdb1e2287592e0673cc255e0286e1cd53427ee68df1c9220c4c" %}
 
 package:
   name: {{ name|lower }}
@@ -18,11 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - flit-core >=3.2,<4
+    - python >=3.7
     - pip
   run:
-    - python >=3.8
+    - python >=3.7
     - filetype >=1.0.10,!=1.1.0
     - defusedxml >=0.7,<1.0
 
