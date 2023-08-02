@@ -1,25 +1,23 @@
 {% set name = "willow" %}
 {% set version = "1.6" %}
-{% set sha256 = "b3aa13f0dc259b6ac76d52778756157a2abcfb59eb08db6472701d78e21dcf33" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/willow-{{ version }}.tar.gz
+  sha256: b3aa13f0dc259b6ac76d52778756157a2abcfb59eb08db6472701d78e21dcf33
 
 build:
   noarch: python
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
     - python >=3.8
-    - flit-core >=3.2,<4
+    - flit_core >=3.2,<4
     - pip
   run:
     - python >=3.8
@@ -35,20 +33,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/wagtail/Willow
-  license: BSD-3-Clause
-  license_family: BSD
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
-  summary: A unified interface to Python image libraries
-  description: |
-    Willow is a simple image library that combines the APIs of Pillow,
-    Wand and OpenCV. It converts the image between the libraries when
-    necessary.
-  doc_url: http://willow.readthedocs.io/en/latest/
+  summary: A Python image library that sits on top of Pillow, Wand and OpenCV
   dev_url: https://github.com/wagtail/Willow
+  license: BSD-3-Clause
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - darynwhite
-    - cshaley
-    - sannykr
