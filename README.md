@@ -13,10 +13,7 @@ Development: https://github.com/wagtail/Willow
 
 Documentation: http://willow.readthedocs.io/en/latest/
 
-Willow is a simple image library that combines the APIs of Pillow,
-Wand and OpenCV. It converts the image between the libraries when
-necessary.
-
+Willow is a simple image library that combines the APIs of Pillow, Wand and OpenCV. It converts the image between the libraries when necessary.
 
 Current build status
 ====================
@@ -152,7 +149,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@cshaley](https://github.com/cshaley/)
 * [@darynwhite](https://github.com/darynwhite/)
-* [@sannykr](https://github.com/sannykr/)
 
