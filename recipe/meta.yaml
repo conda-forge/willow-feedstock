@@ -33,10 +33,16 @@ test:
     - pip
 
 about:
-  summary: A Python image library that sits on top of Pillow, Wand and OpenCV
-  dev_url: https://github.com/wagtail/Willow
+  home: https://github.com/wagtail/Willow
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_family: BSD
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A unified interface to Python image libraries
+  description: Willow is a simple image library that combines the APIs of Pillow,
+    Wand and OpenCV. It converts the image between the libraries when
+    necessary.
+  doc_url: http://willow.readthedocs.io/en/latest/
+  dev_url: https://github.com/wagtail/Willow
 
 extra:
   recipe-maintainers:
