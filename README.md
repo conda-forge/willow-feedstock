@@ -3,20 +3,13 @@ About willow-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/willow-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/wagtail/Willow
+
 
 Package license: BSD-3-Clause
 
-Summary: A unified interface to Python image libraries
+Summary: A Python image library that sits on top of Pillow, Wand and OpenCV
 
 Development: https://github.com/wagtail/Willow
-
-Documentation: http://willow.readthedocs.io/en/latest/
-
-Willow is a simple image library that combines the APIs of Pillow,
-Wand and OpenCV. It converts the image between the libraries when
-necessary.
-
 
 Current build status
 ====================
@@ -152,7 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@cshaley](https://github.com/cshaley/)
 * [@darynwhite](https://github.com/darynwhite/)
-* [@sannykr](https://github.com/sannykr/)
 
