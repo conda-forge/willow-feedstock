@@ -1,5 +1,5 @@
 {% set name = "willow" %}
-{% set version = "1.6" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/willow-{{ version }}.tar.gz
-  sha256: b3aa13f0dc259b6ac76d52778756157a2abcfb59eb08db6472701d78e21dcf33
+  sha256: c90cab69059ac0a2416346c55a33f823e70c46bf3aead549811ef16efbdad8d0
 
 build:
   noarch: python
@@ -38,9 +38,7 @@ about:
   license_family: BSD
   license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: A unified interface to Python image libraries
-  description: Willow is a simple image library that combines the APIs of Pillow,
-    Wand and OpenCV. It converts the image between the libraries when
-    necessary.
+  description: Willow is a simple image library that combines the APIs of Pillow, Wand and OpenCV. It converts the image between the libraries when necessary.
   doc_url: http://willow.readthedocs.io/en/latest/
   dev_url: https://github.com/wagtail/Willow
 
