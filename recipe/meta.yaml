@@ -1,5 +1,5 @@
 {% set name = "willow" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/willow-{{ version }}.tar.gz
-  sha256: e2d0450fd78ab19052d0478b888ef163e3264e8dcd1af002dd691458db98056f
+  sha256: 143cefd30d3bb816cdff857c454da24991dda35a0315ea795101675e0b14262f
 
 build:
   noarch: python
