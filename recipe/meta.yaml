@@ -1,5 +1,5 @@
 {% set name = "willow" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/willow-{{ version }}.tar.gz
-  sha256: e2d0450fd78ab19052d0478b888ef163e3264e8dcd1af002dd691458db98056f
+  sha256: 143cefd30d3bb816cdff857c454da24991dda35a0315ea795101675e0b14262f
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -23,6 +23,10 @@ requirements:
     - python >=3.8
     - filetype >=1.0.10,!=1.1.0
     - defusedxml >=0.7,<1.0
+    - Pillow >=9.1.0,<11.0.0
+  run_constrained:
+    - Wand >=0.6,<1.0
+    - pillow-heif >=0.10.0,<1.0.0<py312|>=0.13.0,<1.0.0>=py312
 
 test:
   imports:
