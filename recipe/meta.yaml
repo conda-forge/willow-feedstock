@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - filetype >=1.0.10,!=1.1.0
     - defusedxml >=0.7,<1.0
-  run-constrained:
+  run_constrained:
     - Pillow >=9.1.0,<11.0.0
     - Wand >=0.6,<1.0
     - pillow-heif >=0.10.0,<1.0.0<py312|>=0.13.0,<1.0.0>=py312
