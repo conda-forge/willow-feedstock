@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -23,6 +23,10 @@ requirements:
     - python >=3.8
     - filetype >=1.0.10,!=1.1.0
     - defusedxml >=0.7,<1.0
+    - Pillow >=9.1.0,<11.0.0
+  run_constrained:
+    - Wand >=0.6,<1.0
+    - pillow-heif >=0.10.0,<1.0.0<py312|>=0.13.0,<1.0.0>=py312
 
 test:
   imports:
