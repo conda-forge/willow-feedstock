@@ -29,7 +29,7 @@ requirements:
     - pillow-heif >=0.10.0,<1.0.0<py312|>=0.13.0,<1.0.0>=py312
 
 test:
-  requirements:
+  requires:
     - Pillow
   imports:
     - willow
