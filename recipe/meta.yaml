@@ -26,8 +26,8 @@ requirements:
     - Pillow >=9.1.0,<12.0.0
   run_constrained:
     - Wand >=0.6,<1.0
-    - pillow-heif >=0.10.0,<1.0.0 # py<312
-    - pillow-heif >=0.13.0,<1.0.0 # py>=312
+    - pillow-heif >=0.10.0,<0.22.0 # py<312
+    - pillow-heif >=0.13.0,<0.22.0 # py>=312
 
 test:
   imports:
