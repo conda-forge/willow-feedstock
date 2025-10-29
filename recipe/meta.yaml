@@ -24,7 +24,7 @@ requirements:
     - filetype >=1.0.10,!=1.1.0
     - defusedxml >=0.7,<1.0
   run_constrained:
-    - Pillow >11.3.0
+    - Pillow >=11.3.0
     - Wand >=0.6,<1.0
     - pillow-heif >=1.0.0
 
